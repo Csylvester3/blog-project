@@ -1,29 +1,30 @@
 body {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    border: 1px;
     min-height: 95vh;
     padding: 10px;
+    background-color: lightslategray;
 }
 header {
-    border: 1px dotted purple;
+    border: 1px solid black;
     display: flex;
     align-items: center;
     padding: 3px;
-    background-color: rgb(211, 204, 204);
+    background-color:lightslategray;
+} 
 
-
-}
 header > h1 {
     flex-grow: 2;
     text-align: center;
+    text-decoration: underline;
 
 }
 header > span {
     padding-top: 45px;
 }
 .main-content {
-    border: 1px solid blue;
+    border: 1px solid black;
     flex-grow: 2;
     
     display: grid;
@@ -33,7 +34,7 @@ header > span {
     
 }
 .footer{
-    border: 1px solid orange;
+    border-bottom: 1px solid black;
 }
 div.blog-container > div > span.catagory {
     color: rgb(0, 174, 237);
@@ -49,9 +50,20 @@ div.blog-container > div > span.date {
 }
 .blog-container {
     border: 1px solid black;
-    height: 175px; /*250px;*/
+    height: 175px;/*250px;*/
     border-radius: 5px;
     padding: 5px 10px;
     margin-right: 5px;
     margin-bottom: 10px; 
+}
+div.blog-container > div > span.text {
+    color: green; 
+}
+div.blog-container > div > span.post {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+div.blog-container > div > span.date-1{
+    color: rgb(101, 97, 97);
 }
